@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
+        <title>PinkyShare Pro</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://unpkg.com/peerjs@1.5.2/dist/peerjs.min.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="glass-card">
+                <header>
+                    <div class="logo">Pinky<span>Share</span></div>
+                    <div id="session-info" class="session-badge">
+                        0 Files Shared (0 MB)
+                    </div>
+                </header>
+
+                <div id="setup-view">
+                    <div class="pin-section">
+                        <span class="label">YOUR DEVICE PIN</span>
+                        <div id="my-pin" class="pin-val">----</div>
+                    </div>
+                    <div class="input-row">
+                        <input
+                            type="text"
+                            id="peer-pin"
+                            placeholder="PARTNER PIN"
+                            maxlength="4"
+                            inputmode="numeric"
+                        />
+                        <button class="btn-primary" onclick="connectToPeer()">
+                            CONNECT DEVICES
+                        </button>
+                    </div>
+                </div>
+
+                <div id="main-view" class="hidden">
+                    <div class="tabs">
+                        <button
+                            class="tab-btn active"
+                            id="tab-files"
+                            onclick="switchTab('files')"
+                        >
+                            FILES
+                        </button>
+                        <button
+                            class="tab-btn"
+                            id="tab-text"
+                            onclick="switchTab('text')"
+                        >
+                            TEXT
+                        </button>
+                    </div>
+
+                    <div id="pane-files">
+                        <div
+                            class="drop-zone"
+                            onclick="
+                                document.getElementById('file-input').click()
+                            "
+                        >
+                            <p>Click to Browse or Drop Files</p>
+                            <input
+                                type="file"
+                                id="file-input"
+                                multiple
+                                hidden
+                                onchange="handleFiles(this.files)"
+                            />
+                        </div>
+                        <div id="file-queue" class="queue"></div>
+                    </div>
+
+                    <div id="pane-text" class="hidden">
+                        <textarea
+                            id="text-input"
+                            placeholder="Paste text here..."
+                        ></textarea>
+                        <button class="btn-primary" onclick="sendText()">
+                            SEND CONTENT
+                        </button>
+                    </div>
+
+                    <div id="stats-panel" class="monitor-box hidden">
+                        <div class="mon-row">
+                            <span class="mon-label">PROGRESS</span>
+                            <span id="percent" class="mon-val">0%</span>
+                        </div>
+                        <div class="track"><div id="bar"></div></div>
+                        <div class="mon-row">
+                            <span class="mon-label">SPEED</span>
+                            <span id="speed" class="mon-val">0 MB/s</span>
+                        </div>
+                        <div class="mon-footer">
+                            <span id="eta">ETA: --</span>
+                            <span id="file-status">READY</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>

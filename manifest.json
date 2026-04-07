@@ -1,0 +1,15 @@
+{
+  "name": "PinkyShare P2P",
+  "short_name": "PinkyShare",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#0a0a0c",
+  "theme_color": "#ff2d75",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/2589/2589174.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
