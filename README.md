@@ -29,11 +29,8 @@ Anonymity-First: No accounts, no tracking, and 4-digit PIN pairing.
 ## Screenshots
 <img width="1901" height="945" alt="image" src="https://github.com/user-attachments/assets/47b2331a-ffca-465a-bcb4-0779d7995bb9" />
 
-<img width="481" height="854" alt="image" src="https://github.com/user-attachments/assets/c06f0179-e3dd-4fa8-97b5-e0a9415f0bb6" />
 
 <img width="1906" height="941" alt="image" src="https://github.com/user-attachments/assets/551162a0-b8b4-40fb-8a25-ef5cc9b1b00d" />
-
-<img width="720" height="1220" alt="image" src="https://github.com/user-attachments/assets/4d5f2152-f9e6-4e01-839d-bc593dabbd6c" />
 
 ---
 
