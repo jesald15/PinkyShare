@@ -9,7 +9,7 @@
  |_|   |_|_| |_|_|\_\\__, | |_____/|_| |_|\__,_|_|  \___| 
                       __/ |                               
                      |___/      v2.0 | SECURE P2P TRANSFER
-
+```
 
 🚀 Overview
 PinkyShare Pro is a high-performance, browser-based file sharing utility designed for Digital Minimalism and Anonymity. It enables direct, peer-to-peer (P2P) transfers between devices (Phone to PC, PC to PC) without ever uploading your data to a central server.
@@ -17,7 +17,6 @@ PinkyShare Pro is a high-performance, browser-based file sharing utility designe
 Every transfer is protected with industry-standard AES-GCM 256-bit Encryption, ensuring your files stay private even on public networks.
 
 ✨ Key Features
-End-to-End Encryption (E2EE): All data is encrypted/decrypted locally using the Web Crypto API.
 
 Zero-Server Storage: Files move directly between browsers using WebRTC.
 
@@ -25,9 +24,18 @@ Automatic Folder Zipping: Drop an entire directory, and the app zips it on-the-f
 
 Adaptive Flow Control: A "Pull-based" ACK protocol prevents mobile buffer overflows and the "0 MB/s" hang.
 
-Ghost Connection Recovery: Integrated heartbeat (Ping/Pong) system detects and clears dead connections instantly.
-
 Anonymity-First: No accounts, no tracking, and 4-digit PIN pairing.
+
+## Screenshots
+<img width="1901" height="945" alt="image" src="https://github.com/user-attachments/assets/47b2331a-ffca-465a-bcb4-0779d7995bb9" />
+
+<img width="481" height="854" alt="image" src="https://github.com/user-attachments/assets/c06f0179-e3dd-4fa8-97b5-e0a9415f0bb6" />
+
+<img width="1906" height="941" alt="image" src="https://github.com/user-attachments/assets/551162a0-b8b4-40fb-8a25-ef5cc9b1b00d" />
+
+<img width="720" height="1220" alt="image" src="https://github.com/user-attachments/assets/4d5f2152-f9e6-4e01-839d-bc593dabbd6c" />
+
+---
 
 🛠️ Tech Stack
 Network: PeerJS (WebRTC Wrapper)
@@ -43,11 +51,9 @@ Open the application on both the Sender and Receiver devices.
 
 Pair the devices by entering the 4-digit PIN of the partner device.
 
-Drag & Drop files or entire folders into the browser.
-
-Wait for the "Ding!" sound—your file is securely saved.
+Drop files or entire folders into the browser.
 
 ⚠️ Performance Notes for Mobile
 Keep Screen On: Mobile browsers often kill WebRTC connections if the screen turns off or the tab is backgrounded.
 
-Browser Choice: Recommended for Chrome, Firefox, or Brave for full Web Crypto API support.
+Browser Choice: Recommended for Firefox, or Brave for full Web Crypto API support.
